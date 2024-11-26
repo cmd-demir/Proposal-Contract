@@ -2,6 +2,8 @@
 pragma solidity ^0.8.18;
 
 contract ProposalCountract {
+    
+    uint256 private counter;
 
     struct Propasal {
         string voting;

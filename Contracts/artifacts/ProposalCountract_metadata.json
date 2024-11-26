@@ -18,7 +18,7 @@
 	},
 	"settings": {
 		"compilationTarget": {
-			"Contrackts/proposal.sol": "ProposalCountract"
+			"Contracts/proposal.sol": "ProposalCountract"
 		},
 		"evmVersion": "cancun",
 		"libraries": {},
@@ -32,12 +32,12 @@
 		"remappings": []
 	},
 	"sources": {
-		"Contrackts/proposal.sol": {
-			"keccak256": "0xe4b2222d75233a71fbe4206feac914bfbdbdc9da5faf5616500d97be16746123",
+		"Contracts/proposal.sol": {
+			"keccak256": "0x2beb36d56aac0992879c123c1318c6e6167eb5927f993c6f9f916ad75dca5d40",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://efc70a58fd1dc958fd6309f2be9f1eab80104622390b8349e6cbcd1c5a5bd119",
-				"dweb:/ipfs/QmekMLphndbXeCTiDT8mtjbf4U4sX99bxjgWr3HTjqbPLi"
+				"bzz-raw://20ace003ac7003ec91c9c51078e30854748641ee7f632e4954489efe7d6e374f",
+				"dweb:/ipfs/QmVz1WVZeMiES39pLVWFubQaoi3HCwLkxXUZfQEoG4uvfs"
 			]
 		}
 	},
