@@ -6,6 +6,7 @@ contract ProposalContract {
     uint256 private counter;
 
     struct Proposal {
+        string title;
         string voting;
         string description;
         uint256 approve;
@@ -19,9 +20,9 @@ contract ProposalContract {
 
     mapping(uint256 => Proposal) proposal_history;
 
-    function create(string calldata _description, uint256 _total_vote_to_end) external{
+    function create(string calldata title, string calldata _description, uint256 _total_vote_to_end) external{
         counter += 1;
-        proposal_history[counter] = Proposal(" ", _description, 0, 0, 0, _total_vote_to_end, false, true); 
+        proposal_history[counter] = Proposal(title, " ", _description, 0, 0, 0, _total_vote_to_end, false, true); 
 }
     
 }

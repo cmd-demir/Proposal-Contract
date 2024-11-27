@@ -9,6 +9,11 @@
 				"inputs": [
 					{
 						"internalType": "string",
+						"name": "title",
+						"type": "string"
+					},
+					{
+						"internalType": "string",
 						"name": "_description",
 						"type": "string"
 					},
@@ -52,11 +57,11 @@
 	},
 	"sources": {
 		"Contracts/proposal.sol": {
-			"keccak256": "0x6f18db8750e3ea88f83bf50bf2c009015d7d04cf0809b0edf4ad44fd209db68c",
+			"keccak256": "0xb30ff069f2db3425eba8a00bac2695dff6f7576f4f98a44d9015ffc8a173ea9f",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://26d3a5adf14baaf142e94ed19c83afce49fa8008a02266f93344e844c362f2e3",
-				"dweb:/ipfs/QmNMBehU3XEsv8YEiE8ZyMVbqKJsy2xvFLkwuJ5xM1toem"
+				"bzz-raw://24129250b32e2764538cbf743e625b1faba11318f4a7d3cfce5a95a44895d7e4",
+				"dweb:/ipfs/QmPc1r7kR7rcgxXq4Dgy51MLNdJk4XtupnA6WDeX9WNYNb"
 			]
 		}
 	},
