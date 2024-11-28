@@ -6,6 +6,11 @@
 	"output": {
 		"abi": [
 			{
+				"inputs": [],
+				"stateMutability": "nonpayable",
+				"type": "constructor"
+			},
+			{
 				"inputs": [
 					{
 						"internalType": "string",
@@ -24,6 +29,32 @@
 					}
 				],
 				"name": "create",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "address",
+						"name": "new_owner",
+						"type": "address"
+					}
+				],
+				"name": "setOwner",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint8",
+						"name": "choice",
+						"type": "uint8"
+					}
+				],
+				"name": "vote",
 				"outputs": [],
 				"stateMutability": "nonpayable",
 				"type": "function"
@@ -57,11 +88,11 @@
 	},
 	"sources": {
 		"Contracts/proposal.sol": {
-			"keccak256": "0xb30ff069f2db3425eba8a00bac2695dff6f7576f4f98a44d9015ffc8a173ea9f",
+			"keccak256": "0xb9ec6e4a835e731b12fd4070a3231b778d13cc647c3b6b235035a7aa70e3558b",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://24129250b32e2764538cbf743e625b1faba11318f4a7d3cfce5a95a44895d7e4",
-				"dweb:/ipfs/QmPc1r7kR7rcgxXq4Dgy51MLNdJk4XtupnA6WDeX9WNYNb"
+				"bzz-raw://cf383986ce919d8a1fbdf6ac60c4b24c9cede394f5426830557ead73d93e512e",
+				"dweb:/ipfs/QmZ3Vu76eQuXQNUDYRDBqAPuQ6mErbqB82Po7sRMzpTt83"
 			]
 		}
 	},
