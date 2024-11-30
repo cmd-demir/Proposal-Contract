@@ -14,7 +14,7 @@
 				"inputs": [
 					{
 						"internalType": "string",
-						"name": "title",
+						"name": "cmd",
 						"type": "string"
 					},
 					{
@@ -41,7 +41,7 @@
 						"components": [
 							{
 								"internalType": "string",
-								"name": "title",
+								"name": "cmd",
 								"type": "string"
 							},
 							{
@@ -107,7 +107,7 @@
 						"components": [
 							{
 								"internalType": "string",
-								"name": "title",
+								"name": "cmd",
 								"type": "string"
 							},
 							{
@@ -221,11 +221,11 @@
 	},
 	"sources": {
 		"Contracts/proposal.sol": {
-			"keccak256": "0x24a9f72b7a8b8e65a498aa8e3317c29b07459e788e3a7ace22e4cef5861611ae",
+			"keccak256": "0x70b3d650e151b4def7fdfd6584bf9f1f8cfbe65858aa781f91f3c2f92f3f79b6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://d0dd1df052c6916b00e19fcdbcbe825628c01bad11558401055ca9e849d65151",
-				"dweb:/ipfs/QmbcK9Nfsbb1gHpKUasAKCyycT2W4zhBym69wkkREMc62H"
+				"bzz-raw://c9cd07aaf4905b1669dd055748d29fd5a8c85c7de9f647f69ce6609f4d901a1f",
+				"dweb:/ipfs/QmQNkAtWF4btLHkvp86R46hbeKnU9BeA13GsvxvxwMqZBU"
 			]
 		}
 	},

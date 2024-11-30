@@ -7,7 +7,7 @@ contract ProposalContract {
     address owner;
 
     struct Proposal {
-        string title;
+        string cmd;
         string voting;
         string description;
         uint256 approve;
@@ -22,9 +22,9 @@ contract ProposalContract {
     mapping(uint256 => Proposal) proposal_history;
     address [] private voted_addresses;
 
-    function create(string calldata title, string calldata _description, uint256 _total_vote_to_end) external onlyOwner {
+    function create(string calldata cmd, string calldata _description, uint256 _total_vote_to_end) external onlyOwner {
         counter += 1;
-        proposal_history[counter] = Proposal(title, " ", _description, 0, 0, 0, _total_vote_to_end, false, true); 
+        proposal_history[counter] = Proposal(cmd, " ", _description, 0, 0, 0, _total_vote_to_end, false, true); 
 }
     constructor() {
         owner = msg.sender;
