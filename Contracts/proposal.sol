@@ -43,10 +43,20 @@ contract ProposalContract {
         require(!isVoted(_address), "Address has already voted");
         _;
     }
+
+    // Functions
+
+    function getCurrentProposal() external view returns(Proposal memory){
+        return proposal_history[counter];
+    }
+
+    function teminateProposal() external onlyOwner active{
+        proposal_history[counter].is_active = false;
+    }
     
     function isVoted (address _address) internal view returns (bool) {
-        for (unit256 i =0; i<voted_addresses.length; i++){
-            if (voted _addresses[i] == _address){
+        for (uint i = 0; i<voted_addresses.length; i++){
+            if (voted_addresses[i] == _address){
                 return true; 
             }
         }
@@ -84,31 +94,30 @@ contract ProposalContract {
 
          voted_addresses.push(msg.sender);
 
-         if (choice == 1) {
+        if (choice == 1) {
             proposal.approve += 1;
             proposal.current_state = calculateCurrentState();
          }
-         else if (choice == 2) {
+        else if (choice == 2) {
             proposal.reject += 1;
             proposal.current_state = calculateCurrentState();
          }
-         else if (choice == 0) {
+        else if (choice == 0) {
             proposal.pass += 1;
             proposal.current_state = calculateCurrentState();
 
          }
 
-         if ((proposal.total_vote_to_end - total_vote == 1) && (choice == 1 || choice == 2 || choice == 0)) {
+        if ((proposal.total_vote_to_end - total_vote == 1) && (choice == 1 || choice == 2 || choice == 0)) {
             proposal.is_active = false;
             voted_addresses = [owner];
             
      }
-        
-     
-
-    
+           
 }
-        
+        function getProposal(uint256 number) external view returns(Proposal memory) {
+            return proposal_history[number];
+}
             
          
     
