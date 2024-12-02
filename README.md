@@ -46,6 +46,4 @@ This project is a Solidity smart contract for managing proposals with voting fun
 - **active:** Ensures the current proposal is active.
 - **newVoter:** Ensures the caller has not already voted on the current proposal.
 
-### **Deployment Information**
-- **Testnet Used:** [Goerli/Rinkeby/BNB Chain Testnet]  
-- **Contract Address:** `INSERT_YOUR_TESTNET_ADDRESS_HERE`
+
